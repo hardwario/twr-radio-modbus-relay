@@ -2,6 +2,8 @@
 
 # Firmware example for using RS-485 Module
 
+Control
+
 If you want to get more information about Core Module, firmware and how to work with it, please follow this link:
 
 **https://www.bigclown.com/doc/firmware/basic-overview/**
