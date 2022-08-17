@@ -40,7 +40,7 @@ void rs485_relay_set(uint64_t *id, const char *topic, void *value, void *param)
     uint8_t channel = (uint32_t) param;
     uint8_t command = (*(bool*)value) ? RELAY_COMMAND_OPEN : RELAY_COMMAND_CLOSE;
 
-    twr_log_debug("ch: %d, value: %d, command %d", channel, *((uint32_t*)value), command);
+    twr_log_debug("ch: %d, value: %ld, command %d", channel, *((uint32_t*)value), command);
 
     relay_send_command(0x01, channel, command, 0);
 }
