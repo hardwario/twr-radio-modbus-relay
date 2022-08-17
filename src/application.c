@@ -154,7 +154,7 @@ void application_init(void)
     twr_module_rs485_set_baudrate(TWR_MODULE_RS485_BAUDRATE_9600);
     twr_module_rs485_set_async_fifo(&write_fifo, &read_fifo);
 
-    twr_radio_pairing_request("bcf-rs485-relay", VERSION);
+    twr_radio_pairing_request("twr-rs485-relay", FW_VERSION);
 
 }
 
